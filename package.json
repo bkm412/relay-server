@@ -1,0 +1,27 @@
+{
+  "name": "relay-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkm412/relay-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkm412/relay-server/issues"
+  },
+  "homepage": "https://github.com/bkm412/relay-server#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "^0.0.0",
+    "mysql": "^2.16.0",
+    "request-promise": "^4.2.2",
+    "ws": "^6.1.0"
+  }
+}
