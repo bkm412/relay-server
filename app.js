@@ -2,7 +2,6 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 
 const WebSocket = require('ws');
-const rp = require('request-promise');
 const express = require('express');
 const mysql = require('mysql');
 const server = require('http').createServer();
@@ -103,7 +102,7 @@ setInterval(() => {
 }, 30000000);
 
 
-var connection = mysql.createConnection(config.dbInfo);
+const connection = mysql.createConnection(config.dbInfo);
 
 
 //dbSave and send data to clients periodically.
