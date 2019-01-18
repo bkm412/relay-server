@@ -4,7 +4,9 @@
 
 ### Run
 ```
-    npm start 
+    $ yarn start 
+    or
+    $ npm start
 ```
 
 ### config
