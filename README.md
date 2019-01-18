@@ -2,6 +2,26 @@
 웹소켓을 제공하는 파트너 업체의 클라이언트 허용량이 낮아,  
 이를 중계하는 서버를 만들어 보게 되었습니다.
 
+### Run
+```
+    npm start 
+```
+
+### config
+``` 
+    parentUrl : "url",                  #parent socket url
+    socketPort : 3004,                  #socket port
+    dbInfo : {                          #mysql connection info
+        host     : 'dbUrl',
+        user     : 'dbUsername',
+        password : 'password',
+        port     : 3306,
+        database : 'database'
+    },
+    socketServerPort : 3005,            #socket server port
+    apiServerPort : 3006                #api server port
+```
+
 ### Open Socket
 
 중계서버의 소켓을 오픈합니다.
