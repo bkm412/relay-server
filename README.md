@@ -174,15 +174,11 @@ DB에 저장할 데이터를 mysql DB에 저장합니다.
     });
 ```
 
-### Server 
+### Api Server 
 
-소켓서버와 API서버를 별도로 열어줍니다.
+API서버를 열어줍니다.
 
 ```
-    //socketServer
-    server.listen(config.socketServerPort, () => {
-        console.log('server start');
-    });
     
     //apiServer
     app.listen(config.apiServerPort, () => {
