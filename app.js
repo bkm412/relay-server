@@ -4,7 +4,6 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 const WebSocket = require('ws');
 const express = require('express');
 const mysql = require('mysql');
-const server = require('http').createServer();
 const config = require('./config');
 
 const app = express();
@@ -128,11 +127,6 @@ app.get('/products',(req,res) => {
     const products = []
     res.send(products);
     res.end();
-});
-
-//socketServer
-server.listen(config.socketServerPort, () => {
-    console.log('server start');
 });
 
 //apiServer
